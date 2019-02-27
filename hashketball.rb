@@ -136,6 +136,7 @@ end
 def num_points_scored player_name
   p = game_hash
     .flat_map { |location, team| team[:players] }
+    .flatten
     .first
     [player_name]
   binding.pry

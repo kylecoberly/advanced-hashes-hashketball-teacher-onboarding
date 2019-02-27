@@ -138,8 +138,6 @@ def num_points_scored player_name
     .flat_map { |location, team| team[:players] }
     .first
     [player_name]
-
-
 end
 
 num_points_scored 'h'

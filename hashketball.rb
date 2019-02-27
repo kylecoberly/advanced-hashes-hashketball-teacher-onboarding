@@ -151,5 +151,5 @@ def team_colors team_name
   elsif game_hash[:away]['team_name'].eql? team_name
     team = game_hash[:away]
   end
-  team.colors
+  team[:colors]
 end

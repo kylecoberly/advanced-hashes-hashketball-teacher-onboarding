@@ -164,5 +164,5 @@ def team_names
 end
 
 def player_numbers team_name
-  get_team(team_name)[:players].map { |_, stats| stats.number }
+  get_team(team_name)[:players].map { |_, stats| stats[:number] }
 end

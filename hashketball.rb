@@ -173,7 +173,7 @@ end
 
 def biggest_shoe
   players.reduce { |max, current|
-    (current.shoe > max.shoe) ? current : max
+    (current[:shoe] > max[:shoe]) ? current : max
   }
 end
 

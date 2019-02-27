@@ -179,5 +179,5 @@ def biggest_shoe
 end
 
 def big_shoe_rebounds
-  biggest_show[:rebounds]
+  biggest_shoe[:rebounds]
 end

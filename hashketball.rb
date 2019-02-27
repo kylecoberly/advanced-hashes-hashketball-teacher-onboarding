@@ -136,7 +136,8 @@ end
 def num_points_scored player_name
   players = game_hash.flat_map { |location, team| team[:players] }
     .reduce({}) { |players, (name, stats)|
-      players[name] => stats
+      players.send("#{name}", stats)
+      players
     }
   binding.pry
 end

@@ -146,9 +146,9 @@ def shoe_size player_name
 end
 
 def team_colors team_name
-  if game_hash[:home]['team_name'].eql? team_name
+  if game_hash[:home][:team_name].eql? team_name
     team = game_hash[:home]
-  elsif game_hash[:away]['team_name'].eql? team_name
+  elsif game_hash[:away][:team_name].eql? team_name
     team = game_hash[:away]
   end
   team[:colors]

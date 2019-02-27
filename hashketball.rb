@@ -173,7 +173,6 @@ end
 
 def biggest_shoe
   players.reduce { |max, (_, current)|
-    binding.pry
     (!max[:shoe] || current[:shoe] > max[:shoe]) ? current : max
   }
 end

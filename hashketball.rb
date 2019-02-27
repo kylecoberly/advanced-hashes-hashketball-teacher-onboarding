@@ -154,11 +154,7 @@ def get_team team_name
 end
 
 def team_colors team_name
-  if game_hash[:home][:team_name].eql? team_name
-    team = game_hash[:home]
-  elsif game_hash[:away][:team_name].eql? team_name
-    team = game_hash[:away]
-  end
+
   get_team(team_name)[:colors]
 end
 

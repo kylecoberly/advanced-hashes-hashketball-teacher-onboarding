@@ -136,7 +136,6 @@ end
 def num_points_scored player_name
   game_hash
     .flat_map { |location, team| team[:players] }
-    .first
     [player_name]
 end
 

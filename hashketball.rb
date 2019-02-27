@@ -138,4 +138,4 @@ def num_points_scored player_name
   binding.pry
 end
 
-num_points_scored 'h'
+num_points_scored 'Ben Gordon'

@@ -177,6 +177,6 @@ end
 def big_shoe_rebounds
   players.reduce { |max, current|
     if !max return current end
-    current.shoe > max.shoe ? current : max
+    (current.shoe > max.shoe) ? current : max
   }
 end

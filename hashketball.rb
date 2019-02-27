@@ -136,10 +136,11 @@ end
 def num_points_scored player_name
   players = game_hash.flat_map { |location, team| team[:players] }
     .reduce({}) { |players, (name, stats)|
+        binding.pry
       players.send("#{name}=", stats)
       players
     }
-  binding.pry
+
 end
 
 num_points_scored 'h'

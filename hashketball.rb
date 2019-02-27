@@ -135,7 +135,7 @@ end
 
 def num_points_scored player_name
   players = game_hash[:away][:players].merge(game_hash[:home][:players])
-  players[player_name].points
+  players[player_name.to_sym].points
 end
 
 num_points_scored 'Ben Gordon'

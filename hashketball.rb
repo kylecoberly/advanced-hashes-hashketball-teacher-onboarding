@@ -134,10 +134,9 @@ def good_practices
 end
 
 def num_points_scored player_name
-  game_hash
+  p = game_hash
     .flat_map { |location, team| team[:players] }
     [player_name]
-    [:points]
 end
 
 num_points_scored 'h'

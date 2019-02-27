@@ -9,7 +9,7 @@ def game_hash
       team_name: '',
       colors: [],
       players: {
-        :'Alan Anderson': {
+        'Alan Anderson' => {
           number: '0',
           shoe: 16,
           points: 22,

@@ -171,5 +171,12 @@ def player_stats player_name
   players[player_name]
 end
 
+def biggest_shoe
+end
+
 def big_shoe_rebounds
+  players.reduce { |max, current|
+    if !max return current
+    current.shoe > max.shoe
+  }
 end

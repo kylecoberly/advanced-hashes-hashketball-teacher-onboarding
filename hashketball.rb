@@ -134,8 +134,5 @@ def good_practices
 end
 
 def num_points_scored player_name
-  players = game_hash[:away][:players].merge(game_hash[:home][:players])
-  players[player_name][:points]
+  game_hash[:away][:players].merge(game_hash[:home][:players])[player_name][:points]
 end
-
-num_points_scored 'Ben Gordon'

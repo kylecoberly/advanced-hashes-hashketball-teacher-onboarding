@@ -133,6 +133,14 @@ def good_practices
   end
 end
 
+def players
+  game_hash[:away][:players].merge(game_hash[:home][:players])
+end
+
 def num_points_scored player_name
-  game_hash[:away][:players].merge(game_hash[:home][:players])[player_name][:points]
+  players[player_name][:points]
+end
+
+def shoe_size
+  
 end

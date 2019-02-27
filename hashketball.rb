@@ -154,7 +154,6 @@ def get_team team_name
 end
 
 def team_colors team_name
-
   get_team(team_name)[:colors]
 end
 

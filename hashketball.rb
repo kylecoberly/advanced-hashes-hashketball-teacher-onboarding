@@ -134,7 +134,8 @@ def good_practices
 end
 
 def num_points_scored player_name
-  p = game_hash['away']['players'].concat(game_hash['home']['players'])
+  game = game_hash
+  game['away']['players'].concat(game_hash['home']['players'])
   
   binding.pry
 end

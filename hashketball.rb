@@ -142,5 +142,5 @@ def num_points_scored player_name
 end
 
 def shoe_size
-
+  players[player_name][:shoe_size]
 end
